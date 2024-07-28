@@ -1,3 +1,4 @@
 # airflow
-**/example_dags
 **/logs
+.env
+airflow/dags/temp/

@@ -8,7 +8,6 @@ There are **five** stages to this project:
 - Data Analysis
 - Data Visualisation
 
-
 ## 1. Data Gathering
 
 1.1. Unhash the data (`/data/bi_data.zip`),extract it and, more importantly, place it in a data warehouse like Snowflake or Databricks so you can use it for the rest of the tasks in this challenge.
@@ -20,10 +19,9 @@ Answer the following questions using the data.
 1. Can you identify some data quality issues within all the three sources that have been provided and cleaned before any further transformation or analysis is done?
 2. Can you document the issues and assumptions made?
 
-
 ## 3. Data Transformation
 
-Transform the raw data provided in order to create staging and summary tables as shown below. 
+Transform the raw data provided in order to create staging and summary tables as shown below.
 
 ### - Create a *"User Journey"* table with the following information
 
@@ -86,7 +84,7 @@ Based on the above tables created can you answer the following questions.
 
 Create a dashboard to visualise the data and provide us with at least 3 interesting insights that you can draw from this data
 
-# Data
+## Data
 
 The data can be found in the `/data/bi_data.zip` file.
 
@@ -132,7 +130,8 @@ While the data is synthetic, please consider it as being as close to reality as 
 | Timestamp | INTEGER | Timestamp during which the events have occured |
 | Discount | BOOLEAN | Discount if any has been applied on the orders completed |
 
-**Useful Definitions**
+### **Useful Definitions**
+
 - Revenue - It refers to the amount obtained from a product when an order completed event takes place
 - Conversion rate - It is the sum of OrderCompleted events overs the Total_Events taken place
 - Transition rate - It is the % of users moving from one event to the other. i.e. ProductViewed--> ProductAdded , ProductAdded --> CartViewed, CartViewed --> CheckoutStarted, CheckoutStarted -->OrderCompleted
